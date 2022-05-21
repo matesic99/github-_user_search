@@ -1,0 +1,162 @@
+<!doctype html>
+<html>
+<head>
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="https://unpkg.com/flowbite@1.4.6/dist/flowbite.min.css" />
+
+
+<script src="../local.js"></script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../dist/output.css" rel="stylesheet">
+</head>
+<body>
+  <body class="bg-lGrayish dark:bg-lBlack">
+
+    <div class="flex items-center justify-center h-screen flex-col">
+      <div class=" w-[90%] max-w-[900px] rounded-lg">
+
+          <div class="flex p-2 justify-between items-center ">
+            <h1 class=" dark:text-bright font-mono font-bold text-3xl ">devfinder</h1>
+          <div class="flex justify-between items-center " id="light">
+            <div>
+              <p class=" dark:text-bright mr-5 text-center font-mono font-semibold ">LIGHT</p>
+            </div>
+            <div class=" font-mono items-center">
+              <img src="https://raw.githubusercontent.com/UnTalPeluca/GitHubUserSearchApp/40e6d2020dcd9b7b93d08042ebbd994007f32694/assets/icon-sun.svg" alt="" class="w-5 h-5 text-lSky">
+            </div>
+          </div>
+
+          <div class="flex justify-between items-center display-none" id="dark">
+            <div>
+              <p class=" dark:text-bright mr-5 text-center font-mono font-semibold ">DARK</p>
+            </div>
+            <div class=" font-mono items-center">
+              <img src="../images/icon-moon.svg" alt="" class="w-5 h-5 ">
+            </div>
+          </div>
+        </div>
+        <!-- Search -->
+
+        <form class="mt-3 shadow-lg"  >
+          <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-gray-300 outiline">Search</label>
+          <div class="relative">
+              <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
+                  <svg class="w-5 h-5 text-lSky dark:text-lSky" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+              </div>
+              <input type="search" id="input" class="block p-4 pl-10  outiline-none w-full text-sm text-gray-900 bg-gray-50 rounded-lg  dark:bg-darkBlue focus:ring-blue-500 focus:border-blue-500  dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:placeholder-lGrayish" placeholder="Search Github username..." >
+              <button type="submit" id="btn" class="text-bright absolute right-2.5 bottom-2.5 bg-lSky hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Search</button>
+          </div>
+      </form>
+
+              <!-- bio -->
+
+              <div class="grid lg:grid-flow-col bg-white-500 p-8 mt-5 rounded-lg shadow-xl bg-bright dark:bg-darkBlue" >
+
+                <div class="lg:row-span-4 lg:col-end-3 content-center">
+                  <img src="https://avatars.githubusercontent.com/u/88053283?v=4" class="w-20 h-20 rounded-3xl"  id="profile_img" alt="profile image">
+                </div>
+
+                <div class="flex justify-center flex-col col-start-2 col-end-4 lg:col-start-4">
+                    <h2 class="text-black dark:text-bright" id="name">The Octotat</h2>
+                    <p class="text-lSky" id="link"><a href="https://github.com/">@octotat</a></p>
+                    <div class="lg:col-end-6">
+                    <p class="dark:text-lGrey " id="joined">Joined 25 Jan 2011</p>
+                  </div>
+                </div>
+                <div class="col-span-3 mt-4 xs:text-center lg:col-start-4 text-lGrey">
+                  <p id="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit.Aam, vitae minus?</p>
+                </div>
+
+                <div class="flex justify-between col-span-3 lg:col-start-4 p-5 text-center items-center bg-lGrayish dark:bg-lBlack rounded-lg mt-4">
+                  <div>
+                    <p class="text-lGrey dark:text-lGrey">Repos</p>
+                    <h3 class="dark:text-bright font-semibold" id="repos">0</h3>
+                    
+                  </div>
+                  <div>
+                    <p class=" text-lGrey dark:text-lGrey" >Followers</p>
+                    <h3 class="dark:text-bright font-semibold" id="followers">3998</h3>
+                    
+                  </div>
+                  <div>
+                    <p class=" text-lGrey dark:text-lGrey"> Following</p>
+                    <h3 class="dark:text-bright font-semibold"  id="following">50</h3>
+                    
+                  </div>
+          
+
+
+</div>
+
+
+
+        <div class=" flex col-span-3 flex-col lg:flex-row lg:items-center lg:col-start-4 lg:col-end-7 lg:justify-beetwen dark:text-lGrayish  lg:col-span-4 justify-between mt-5 gap-3 pb-4" > 
+
+          <div class="lg:col-start-4">
+          <div class="  flex gap-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 " fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>            
+            <p class="font-mono font-semibold text-lGrey" id="location">Not Available</p>
+        </div>
+    
+
+        <div class=" flex gap-4 mt-5">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207" />
+          </svg>
+              <p class="font-mono font-semibold text-lGrey" id="twitter">Not Available</p>
+        </div>
+      </div>
+      
+      <div class="lg:col-start-5 mt-3">
+        <div class=" flex gap-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
+          </svg>
+              <p class="font-mono font-semibold text-lGrey" id="website">Not Available</p>
+        </div>
+
+        <div class="flex gap-4 mt-5">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+          </svg>       
+           <p class="font-mono font-semibold text-lGrey" id="company">Not Available</p>
+        </div>
+      </div>
+
+
+
+
+
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+
+
+
+<script src="./darktheme.js"></script>
+<script src="./script.js"></script>
+
+</body>
+</html>
