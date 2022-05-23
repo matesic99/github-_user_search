@@ -1,4 +1,4 @@
-<img src="../images/dark_theme.png" ></img>
+![Design preview for the Advice generator app coding challenge](./images/design.png)
 
 
 <h1 align="center">Github User Search App</h1>
