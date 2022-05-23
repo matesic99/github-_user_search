@@ -1,9 +1,8 @@
-<img src="/home/matesic/frontend_mentor/github_user_search/images/dark_theme.png" ></img>
+<img src="../images/dark_theme.png" ></img>
 
 
 <h1 align="center">Github User Search App</h1>
 
-<br>
 <br>
 
 
